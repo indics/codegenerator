@@ -14,10 +14,10 @@ import java.util.List;
 
 import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
-import com.hotent.core.db.IEntityDao;
-import com.hotent.core.service.BaseService;
-import com.hotent.core.util.BeanUtils;
-import com.hotent.core.util.UniqueIdUtil;
+import com.cosim.core.db.IEntityDao;
+import com.cosim.core.service.BaseService;
+import com.cosim.core.util.BeanUtils;
+import com.cosim.core.util.UniqueIdUtil;
 import com.casic.${system}.model.${package}.${class};
 import com.casic.${system}.dao.${package}.${class}Dao;
 <#if subtables?exists && subtables?size != 0>
@@ -27,8 +27,8 @@ import com.casic.${system}.dao.${table.variables.package}.${table.variables.clas
 	</#list>
 </#if>
 <#if model.variables.flowFlag?exists && model.variables.flowFlag=='true'>
-import com.hotent.core.bpm.model.ProcessCmd;
-import com.hotent.platform.webservice.api.ProcessService;
+import com.cosim.core.bpm.model.ProcessCmd;
+import com.cosim.platform.webservice.api.ProcessService;
 </#if>
 
 /**

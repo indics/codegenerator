@@ -8,7 +8,7 @@ package com.casic.${system}.model.${package};
 
 import java.util.ArrayList;
 import java.util.List;
-import com.hotent.core.model.BaseModel;
+import com.cosim.core.model.BaseModel;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.EqualsBuilder;

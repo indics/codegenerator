@@ -90,7 +90,7 @@
 		});
 		
 		function showResponse(responseText) {
-			var obj = new com.hotent.form.ResultMessage(responseText);
+			var obj = new com.cosim.form.ResultMessage(responseText);
 			if (obj.isSuccess()) {
 				swal({
 					title:"保存成功！",

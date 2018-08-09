@@ -22,23 +22,26 @@
 		<template id="mobileDetail" path="mobiledetail.ftl"/>
 	</templates>
 	
+
+	
 	<files baseDir="d:\Projects\aop-webapp-hplus\" >
 		<file refTemplate="mapper" filename="{class}.map.xml" dir="src\main\resources\com\casic\{system}\maper"  sub="true"  override="true"/>
-		<file refTemplate="model" filename="{class}.java" dir="src\main\java\com\casic\{system}\model"  sub="true" override="true"/>
-		<file refTemplate="dao" filename="{class}Dao.java" dir="src\main\java\com\casic\{system}\dao" sub="true"  override="true"/>
-		<file refTemplate="service" filename="{class}Service.java" dir="src\main\java\com\casic\{system}\service"  override="true"/>
-		<file refTemplate="controller" filename="{class}Controller.java" dir="src\main\java\com\casic\{system}\controller"  override="true"/>
-		<file refTemplate="list" filename="{classVar}List.jsp" dir="src\main\webapp\WEB-INF\view\{system}" override="true"/>
+		<file refTemplate="model" filename="{class}.java" dir="src\main\java\com\casic\{system}\model\{package}"  sub="true" override="true"/>
+		<file refTemplate="dao" filename="{class}Dao.java" dir="src\main\java\com\casic\{system}\dao\{package}" sub="true"  override="true"/>
+		<file refTemplate="service" filename="{class}Service.java" dir="src\main\java\com\casic\{system}\service\{package}"  override="true"/>
+		<file refTemplate="controller" filename="{class}Controller.java" dir="src\main\java\com\casic\{system}\controller\{package}"  override="true"/>
+		<file refTemplate="list" filename="{classVar}List.jsp" dir="src\main\webapp\WEB-INF\view\{system}\{package}" override="true"/>
 		<file refTemplate="get" filename="{classVar}Get.jsp" dir="src\main\webapp\WEB-INF\view\{system}\{package}" override="true"/>
 		<file refTemplate="edit" filename="{classVar}Edit.jsp" dir="src\main\webapp\WEB-INF\view\{system}\{package}" override="true"/>
 		<file refTemplate="mobileForm" filename="{class}Form.js" dir="src\main\webapp\js\casic\{system}\{package}"  override="true"/>
 		<file refTemplate="mobileDetail" filename="{class}Detail.js" dir="src\main\webapp\js\casic\{system}\{package}"  override="true"/>
 	</files>
 	
-	<table tableName="api" >
-		<variable name="class" value="Api" />
-		<variable name="classVar" value="api" />
-		<variable name="package" value="api" />
-		<variable name="path" value="api" />
+	<!--Controller别名：system/path/classVar-->
+	<table tableName="student" >
+		<variable name="class" value="Student" />
+		<variable name="classVar" value="student" />
+		<variable name="package" value="student" />
+		<variable name="path" value="student" />
 	</table>
 </config>
