@@ -11,10 +11,10 @@ package com.casic.${system}.dao.${package};
 
 import java.util.List;
 import org.springframework.stereotype.Repository;
-import com.hotent.core.db.BaseDao;
+import com.cosim.core.db.BaseDao;
 <#if sub?exists && sub>
-import com.hotent.core.util.UniqueIdUtil;
-import com.hotent.core.util.BeanUtils;
+import com.cosim.core.util.UniqueIdUtil;
+import com.cosim.core.util.BeanUtils;
 </#if>
 import com.casic.${system}.model.${package}.${class};
 /**

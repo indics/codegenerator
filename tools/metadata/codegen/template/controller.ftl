@@ -18,12 +18,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.hotent.core.annotion.Action;
+import com.cosim.core.annotion.Action;
 import org.springframework.web.servlet.ModelAndView;
-import com.hotent.core.util.UniqueIdUtil;
-import com.hotent.core.util.ContextUtil;
-import com.hotent.core.web.util.RequestUtil;
-import com.hotent.core.web.controller.BaseController;
+import com.cosim.core.util.UniqueIdUtil;
+import com.cosim.core.util.ContextUtil;
+import com.cosim.core.web.util.RequestUtil;
+import com.cosim.core.web.controller.BaseController;
 import com.casic.core.web.query.JQGridQueryFilter;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -38,11 +38,11 @@ import com.casic.${system}.service.${package}.${class}Service;
 import com.casic.${system}.model.${table.variables.package}.${table.variables.class};
 	</#list>
 </#if>
-import com.hotent.core.web.ResultMessage;
+import com.cosim.core.web.ResultMessage;
 <#--直接绑定工作流生成-->
 <#if model.variables.flowFlag?exists && model.variables.flowFlag=='true'>
-import com.hotent.core.bpm.model.ProcessCmd;
-import com.hotent.platform.webservice.api.ProcessService;
+import com.cosim.core.bpm.model.ProcessCmd;
+import com.cosim.platform.webservice.api.ProcessService;
 </#if>
 /**
  *<pre>
